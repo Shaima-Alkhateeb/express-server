@@ -19,7 +19,7 @@ app.post('/person', (req, res) => {
 });
 
 function start(port) {
-  app.listen(3005, () => console.log(`server up a wake ^_^ on ${port}`));
+  app.listen(port || 3005, () => console.log(`server up a wake ^_^ on ${port}`));
 }
 
 module.exports = {
